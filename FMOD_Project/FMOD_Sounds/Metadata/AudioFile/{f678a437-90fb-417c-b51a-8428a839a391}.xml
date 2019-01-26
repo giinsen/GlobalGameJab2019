@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{f678a437-90fb-417c-b51a-8428a839a391}">
+        <property name="assetPath">
+            <value>Breath_Good_04.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>5</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{a4815021-92af-49f5-805e-8a094331b72f}</destination>
+        </relationship>
+    </object>
+</objects>

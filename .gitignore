@@ -1,0 +1,60 @@
+﻿
+*.csproj
+*.pidb
+*.unityproj
+*.sln
+*.userprefs
+*.DS_Store
+*.suo
+
+*.wav
+*.wav.meta
+*.psd
+*.db
+*.cache
+*.psd.meta
+
+obj/*
+.vs/*
+
+*Thumbs.db.meta
+
+log-filter.txt
+logcat-filter.txt
+
+# FMOD
+Assets/FMODStudioCache.asset
+Assets/FMODStudioCache.asset.meta
+fmod.log
+fmod_editor.log
+*.log
+
+# FMOD studio (In folder FMOD)
+Projet FMOD/FMOD .user
+Projet FMOD/FMOD .unsaved
+Projet FMOD/FMOD .cache
+Projet FMOD/FMOD .restore
+
+
+ProjectSettings/ProjectVersion.txt
+
+Library/*
+Temp/*
+References/*
+Documents/*
+
+Build/*
+Builds/*
+
+Docs/*
+
+Assets/Untracked/*
+Assets/Unexported/*
+Assets/Unexported.meta
+
+Assets/Resources/build-version.asset
+Assets/Resources/build-version.asset.meta
+Assets/FMOD/FMODStudioCache.asset
+Assets/FMOD/FMODStudioCache.asset.meta
+Library/
+Temp/

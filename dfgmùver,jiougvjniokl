@@ -1,0 +1,166 @@
+[33mcommit 041d5e28c94ab0365fe552432f568492f7a1d26c[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: giinsen <gabriel.lapegue@yahoo.fr>
+Date:   Sat Jan 26 19:46:15 2019 +0100
+
+    .....
+
+[33mcommit aca3a53e2d472c8acf78fff5d180f25bdfcbabca[m
+Author: giinsen <gabriel.lapegue@yahoo.fr>
+Date:   Sat Jan 26 19:45:39 2019 +0100
+
+    rfgniuebfhdsnuhfggreuhyrbhrfnyiu SDFGRGRRRRR
+
+[33mcommit ea885f993146cfd2d6cab354b10813ac9fea6ec6[m
+Author: giinsen <gabriel.lapegue@yahoo.fr>
+Date:   Sat Jan 26 19:37:49 2019 +0100
+
+    removed 7z useless
+
+[33mcommit b8662e3a90035f443d7e8684deecb3a0618cde33[m
+Author: giinsen <gabriel.lapegue@yahoo.fr>
+Date:   Sat Jan 26 19:34:21 2019 +0100
+
+    lfs
+
+[33mcommit 2b672d2667729f16bcd546ecfedd635f9462383e[m
+Author: giinsen <gabriel.lapegue@yahoo.fr>
+Date:   Sat Jan 26 19:21:58 2019 +0100
+
+    new scene setup
+
+[33mcommit f7a2ae5235228df55fd8878219a6765a923d8522[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Gros Ours <hugo.bourbon@wanadoo.fr>
+Date:   Sat Jan 26 17:08:36 2019 +0100
+
+    New FMOD Sounds
+
+[33mcommit 70f2bc4ab2bd6ec27af2afb621cddcf44618c471[m
+Author: DESKTOP-JV85012\Henri <patrier.henri@gmail.com>
+Date:   Sat Jan 26 16:15:14 2019 +0100
+
+    Add Henri scene, Asteroid, Post processing, Lighting, graph stuff
+
+[33mcommit c07041b74ad7c9b82edeb3639817ec2710f43989[m
+Author: Gros Ours <hugo.bourbon@wanadoo.fr>
+Date:   Sat Jan 26 15:08:18 2019 +0100
+
+    MAster Bank commit
+
+[33mcommit b032f8ee057ca58455518c4e59075dd77afd0ce5[m
+Merge: 07b8acd 85fb795
+Author: Phenix8 <clement.mezelle@free.fr>
+Date:   Sat Jan 26 14:56:29 2019 +0100
+
+    Merge branch 'master' of https://github.com/brumeire/GGJ-2019
+    
+    # Conflicts:
+    #       Assets/Materials.meta
+    #       Assets/Scenes/Playing room.unity.meta
+    #       Assets/Starfield Skybox.meta
+    #       Assets/SteamVR/InteractionSystem/Teleport/Sounds.meta
+    #       Assets/StreamingAssets/Master Bank.bank.meta
+    #       Assets/StreamingAssets/Master Bank.strings.bank.meta
+
+[33mcommit 07b8acdde9899e4878220faeb9ec2ead71b07773[m
+Author: Phenix8 <clement.mezelle@free.fr>
+Date:   Sat Jan 26 14:53:55 2019 +0100
+
+    update scene and scripts
+
+[33mcommit 85fb795fae51eceb9d238d5f593f6a054ea3fe7f[m
+Author: Ludovic Moge <ludovic.moge@gmail.com>
+Date:   Sat Jan 26 14:51:45 2019 +0100
+
+    Playing room
+
+[33mcommit 8d57f35f8cef3740f6bf2e51f08600bed8e162ce[m
+Merge: f440662 bf93666
+Author: giinsen <gabriel.lapegue@yahoo.fr>
+Date:   Sat Jan 26 12:25:27 2019 +0100
+
+    mergind fmod and skybox
+
+[33mcommit f440662d5bd543786b5b8b84c7289c6b95bf6b08[m
+Author: giinsen <gabriel.lapegue@yahoo.fr>
+Date:   Sat Jan 26 12:24:08 2019 +0100
+
+    skybox
+
+[33mcommit bf936667d362249b511f2ae9bc6a2ef3d236e8ae[m
+Author: Gros Ours <hugo.bourbon@wanadoo.fr>
+Date:   Sat Jan 26 11:59:17 2019 +0100
+
+    FMOD Master Bank meta
+
+[33mcommit 58b99eb572e04f05a41e8aa4713578fca06e3d7b[m
+Author: Gros Ours <hugo.bourbon@wanadoo.fr>
+Date:   Sat Jan 26 11:59:03 2019 +0100
+
+    New fucking FMOD Folder
+
+[33mcommit 9be50758b273d7927997324856cd5f80c8b5174f[m
+Author: Gros Ours <hugo.bourbon@wanadoo.fr>
+Date:   Sat Jan 26 11:51:48 2019 +0100
+
+    "a(ruitaz"zt
+
+[33mcommit 0de3a05fddaf7bbad40a95d38999b4cecfa0537b[m
+Author: Gros Ours <hugo.bourbon@wanadoo.fr>
+Date:   Sat Jan 26 11:47:19 2019 +0100
+
+    FMOD metas
+
+[33mcommit e2e0367e6a96f5c35173e312168ae13316274d06[m
+Author: Phenix8 <clement.mezelle@free.fr>
+Date:   Sat Jan 26 04:21:03 2019 +0100
+
+    work on game feel and mecas
+
+[33mcommit 39026c566db2d9f0d88037e4febcdd48e167669e[m
+Author: giinsen <gabriel.lapegue@yahoo.fr>
+Date:   Sat Jan 26 03:34:57 2019 +0100
+
+    hdmi pas assez long
+
+[33mcommit 8d219620bb7183dfcef741b37b79ce331b5543f9[m
+Author: Phenix8 <clement.mezelle@free.fr>
+Date:   Sat Jan 26 03:15:45 2019 +0100
+
+    on degage de ce pc de merde qui freeze h24
+
+[33mcommit b13c65928c629dc0456d1fdacfd82e9fa14a17aa[m
+Merge: c458e7b 17c89a2
+Author: Phenix8 <clement.mezelle@free.fr>
+Date:   Sat Jan 26 02:49:02 2019 +0100
+
+    Merge branch 'master' of https://github.com/brumeire/GGJ-2019
+
+[33mcommit c458e7b67909d623c6c43e0b6f8cf3599f3a32a6[m
+Author: Phenix8 <clement.mezelle@free.fr>
+Date:   Sat Jan 26 02:48:53 2019 +0100
+
+    proto is working
+
+[33mcommit 17c89a209ad7e4e2e8b14e029a9bf3ca0d25ef4e[m
+Author: Gros Ours <hugo.bourbon@wanadoo.fr>
+Date:   Fri Jan 25 22:40:46 2019 +0100
+
+    Adding FMOD to project
+
+[33mcommit c332177826c1ec8ca1e1e43aaed59b178d64f54c[m
+Author: Phenix8 <clement.mezelle@free.fr>
+Date:   Fri Jan 25 22:35:06 2019 +0100
+
+    Initial setup and main scene
+
+[33mcommit 25478c73ef2b060b433d5da0d382825745dfbb38[m
+Author: Phenix8 <clement.mezelle@free.fr>
+Date:   Fri Jan 25 22:25:33 2019 +0100
+
+    Adding Steam VR
+
+[33mcommit bb115895252cb3de1bdb3f6d2542e89beda78078[m
+Author: Phenix8 <clement.mezelle@free.fr>
+Date:   Fri Jan 25 22:16:20 2019 +0100
+
+    first commit

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{c02505fb-e7db-4687-b068-eb4721af11cf}">
+        <property name="assetPath">
+            <value>Collision_Low_1.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>0.38414965986394556</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{a4815021-92af-49f5-805e-8a094331b72f}</destination>
+        </relationship>
+    </object>
+</objects>
