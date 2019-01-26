@@ -7,6 +7,8 @@ using Valve.VR.InteractionSystem;
 public class SmallAsteroid : Asteroid
 {
 
+
+
     protected override void Update()
     {
         transform.Rotate(Vector3.one * Time.deltaTime * 0f, Space.Self);
@@ -14,7 +16,7 @@ public class SmallAsteroid : Asteroid
 
     protected override void OnDetachedFromHand(Hand hand)
     {
-        departureSpeed = 450f;
+        departureSpeed = 600f;
         isDetached = true;
         //player.GetComponent<Rigidbody>().velocity = Vector3.zero;
         player.transform.SetParent(null);
