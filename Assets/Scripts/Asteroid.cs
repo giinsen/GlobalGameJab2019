@@ -14,6 +14,8 @@ public class Asteroid : MonoBehaviour
     private Vector3 previousHandPos;
     private float durationGrab = 0f;
 
+    public float rotationSpeed;
+
     private Vector3 startingPlayerPos;
     private List<Vector3> positionList = new List<Vector3>();
 
@@ -48,7 +50,7 @@ public class Asteroid : MonoBehaviour
 
     protected virtual void Update()
     {
-        transform.Rotate(Vector3.one * Time.deltaTime * 4f, Space.Self);
+        transform.Rotate(Vector3.one * Time.deltaTime * rotationSpeed, Space.Self);
     }
 
     protected virtual void HandHoverUpdate(Hand hand)

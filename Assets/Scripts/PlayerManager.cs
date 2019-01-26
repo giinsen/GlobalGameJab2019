@@ -17,7 +17,9 @@ public class PlayerManager : MonoBehaviour {
     FMOD.Studio.EventInstance collisionSound;
     FMOD.Studio.ParameterInstance collisionSoundForce;
 
-
+    private static bool[] checkpoint = new bool[] {false,false,false,false,false};
+    private static Vector3 lastCheckpointPosition;
+    private static Quaternion lastCheckpointRotation;
 
     public float oxygen = 10f;
 
@@ -47,7 +49,16 @@ public class PlayerManager : MonoBehaviour {
         if (SteamVR_Input._default.inActions.Teleport.GetStateDown(SteamVR_Input_Sources.Any))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            transform.position = lastCheckpointPosition + Vector3.one/2;
+            transform.rotation = lastCheckpointRotation;
         }
 
+    }
+
+    public static void Checkpoint(int level, Vector3 chekpointPosition, Quaternion checkpointRotation)
+    {
+        checkpoint[level] = true;
+        lastCheckpointPosition = chekpointPosition;
+        lastCheckpointRotation = checkpointRotation;
     }
 }
