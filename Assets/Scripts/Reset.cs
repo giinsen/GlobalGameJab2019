@@ -14,9 +14,9 @@ public class Reset : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        //if (SteamVR_Input._default.inActions.Teleport.GetStateDown(SteamVR_Input_Sources.Any))
-        //{
-        //    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        //}
+        if (SteamVR_Input._default.inActions.Teleport.GetStateDown(SteamVR_Input_Sources.Any))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
 	}
 }
