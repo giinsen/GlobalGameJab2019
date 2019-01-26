@@ -39,7 +39,7 @@ public class Asteroid : MonoBehaviour
         handAttachementPoint = new GameObject("Attachment Point");
         handAttachementPoint.transform.parent = transform;
         handAttachementPoint.transform.localPosition = Vector3.zero;
-        GetComponent<Interactable>().handFollowTransform = handAttachementPoint.transform;
+        //GetComponent<Interactable>().handFollowTransform = handAttachementPoint.transform;
 
         /*playerAttachementPoint = new GameObject("Player Attachment Point");
         playerAttachementPoint.transform.parent = transform;
