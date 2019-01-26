@@ -4,18 +4,16 @@ using UnityEngine;
 
 public class Checkpoint : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public int checkpointLevel;
 
     private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.gameObject.tag == "Player")
+        {
+            PlayerManager.Checkpoint(checkpointLevel, transform.position, transform.rotation);
+
+            GetComponent<Collider>().enabled = false;
+            GetComponentInChildren<Light>().color = Color.green;
+        }
     }
 }
