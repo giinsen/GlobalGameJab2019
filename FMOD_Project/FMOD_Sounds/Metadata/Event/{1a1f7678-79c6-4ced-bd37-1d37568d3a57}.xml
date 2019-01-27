@@ -5,7 +5,7 @@
             <value>Breathing</value>
         </property>
         <property name="outputFormat">
-            <value>2</value>
+            <value>1</value>
         </property>
         <relationship name="folder">
             <destination>{643f6842-9fe5-4940-b398-0384f63b94ec}</destination>
@@ -148,6 +148,9 @@
         </relationship>
     </object>
     <object class="EventMixerMaster" id="{4c0bc1bb-a24c-4b19-af2d-f6548e9c4492}">
+        <property name="volume">
+            <value>1.5</value>
+        </property>
         <relationship name="effectChain">
             <destination>{5e64cb3d-beaf-4780-9fdc-6c21832ca1cc}</destination>
         </relationship>
@@ -168,9 +171,6 @@
         <property name="length">
             <value>5</value>
         </property>
-        <property name="volume">
-            <value>-5</value>
-        </property>
         <relationship name="modulators">
             <destination>{d272eacc-20d1-4d82-af0f-e298cfb7bf8f}</destination>
         </relationship>
@@ -183,7 +183,7 @@
     </object>
     <object class="EventMixerGroup" id="{13ad6c4c-47fd-4b19-a296-7d06c31c3e15}">
         <property name="volume">
-            <value>-4</value>
+            <value>3</value>
         </property>
         <property name="name">
             <value>Good</value>
@@ -211,7 +211,7 @@
     </object>
     <object class="EventMixerGroup" id="{0264dc1f-fc58-4809-9a71-570692104942}">
         <property name="volume">
-            <value>-10</value>
+            <value>-9</value>
         </property>
         <property name="name">
             <value>Medium</value>
@@ -248,7 +248,7 @@
     </object>
     <object class="EventMixerGroup" id="{03fe7a6a-8712-4617-8be1-42733808be6b}">
         <property name="volume">
-            <value>-7.5</value>
+            <value>-8.5</value>
         </property>
         <property name="name">
             <value>NoOxygen</value>
@@ -285,7 +285,7 @@
     </object>
     <object class="EventMixerGroup" id="{cfe0e58e-1264-4cbb-bbfe-5392d07fe6df}">
         <property name="volume">
-            <value>-6</value>
+            <value>-2</value>
         </property>
         <property name="name">
             <value>Die</value>
@@ -313,7 +313,7 @@
     </object>
     <object class="EventMixerGroup" id="{872888be-0876-4abd-8d0b-ebeb9e457eb8}">
         <property name="volume">
-            <value>-6</value>
+            <value>-9.5</value>
         </property>
         <property name="name">
             <value>Refill</value>
@@ -552,7 +552,6 @@
         <relationship name="effects">
             <destination>{caafca59-46ea-4eb3-a280-553b2db8f2bd}</destination>
             <destination>{78362134-0b8c-47e8-8568-81d63158eb76}</destination>
-            <destination>{4649edc5-6a40-43e5-b1f0-3cf6a48a8033}</destination>
             <destination>{8a812ca8-516e-4826-815e-a37a9a4bb950}</destination>
         </relationship>
     </object>
@@ -563,7 +562,7 @@
             <value>volume</value>
         </property>
         <property name="amount">
-            <value>15</value>
+            <value>3</value>
         </property>
     </object>
     <object class="SingleSound" id="{a4c2c5c5-f308-493b-ab6a-3fbe5742aa69}">
@@ -683,7 +682,7 @@
     </object>
     <object class="ParameterCondition" id="{31786562-ccd9-48e1-bf5d-c2fc710409df}">
         <property name="minimum">
-            <value>9.8999996185302734</value>
+            <value>9.9499998092651367</value>
         </property>
         <property name="maximum">
             <value>10</value>
@@ -701,10 +700,9 @@
         </property>
     </object>
     <object class="MixerBusFader" id="{78362134-0b8c-47e8-8568-81d63158eb76}"/>
-    <object class="SpatialiserEffect" id="{4649edc5-6a40-43e5-b1f0-3cf6a48a8033}"/>
     <object class="SFXReverbEffect" id="{8a812ca8-516e-4826-815e-a37a9a4bb950}">
         <property name="decayTime">
-            <value>2000</value>
+            <value>20000</value>
         </property>
         <property name="wetLevel">
             <value>-34</value>

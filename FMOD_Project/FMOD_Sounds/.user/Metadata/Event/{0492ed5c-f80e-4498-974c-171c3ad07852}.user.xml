@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.01.10.00">
     <object class="Event" id="{0492ed5c-f80e-4498-974c-171c3ad07852}">
-        <property name="uiMaxMarkerTracksVisible">
-            <value>17</value>
-        </property>
         <relationship name="selectables">
-            <destination>{735fc410-0aa6-4211-bd30-a7908960e882}</destination>
+            <destination>{c1e7a7b6-cdf2-4129-ae5d-fb4e52f3f39a}</destination>
         </relationship>
         <relationship name="uiLastParameterSelection">
             <destination>{25ec7a91-8303-48ba-92a9-bc49a5c9a0a7}</destination>
@@ -33,7 +30,7 @@
     </object>
     <object class="ParameterProxy" id="{735fc410-0aa6-4211-bd30-a7908960e882}">
         <property name="uiLastRulerScaleRatio">
-            <value>0.0033112582781456954</value>
+            <value>0.0078369905956112845</value>
         </property>
     </object>
     <object class="EventMixerMaster" id="{fc0c9908-a8bd-408a-bd5a-019711ad9354}">
@@ -102,7 +99,6 @@
     <object class="ParameterCondition" id="{c98af66e-9acf-4cb8-8810-64410ae5882f}"/>
     <object class="ParameterCondition" id="{6010b3c5-5e67-4c16-9daa-a6a0bb8d8df1}"/>
     <object class="MixerBusFader" id="{413d1761-03de-4dc6-8c94-ab9c010424dc}"/>
-    <object class="SpatialiserEffect" id="{ca103cff-a76f-4481-8175-e0f8325e37ff}"/>
     <object class="SFXReverbEffect" id="{544753c0-3844-4a38-bd8f-cd3f641c71b4}"/>
     <object class="MixerBusFader" id="{3cfd2e9a-b0f8-4d6a-bf21-d075cd262a82}"/>
     <object class="LowpassEffect" id="{6adf1408-9ed4-4350-aa52-276198d86a57}"/>

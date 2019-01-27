@@ -5,7 +5,7 @@
             <value>HeartBeat</value>
         </property>
         <property name="outputFormat">
-            <value>2</value>
+            <value>1</value>
         </property>
         <relationship name="folder">
             <destination>{643f6842-9fe5-4940-b398-0384f63b94ec}</destination>
@@ -167,6 +167,9 @@
         </relationship>
     </object>
     <object class="EventMixerMaster" id="{fc0c9908-a8bd-408a-bd5a-019711ad9354}">
+        <property name="volume">
+            <value>1</value>
+        </property>
         <relationship name="effectChain">
             <destination>{189989ef-9ac7-4b51-83fd-8ab96b4a07db}</destination>
         </relationship>
@@ -663,7 +666,6 @@
     <object class="MixerBusEffectChain" id="{189989ef-9ac7-4b51-83fd-8ab96b4a07db}">
         <relationship name="effects">
             <destination>{413d1761-03de-4dc6-8c94-ab9c010424dc}</destination>
-            <destination>{ca103cff-a76f-4481-8175-e0f8325e37ff}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{232b66a3-f0da-4da8-907a-e02d05b6e99e}"/>
@@ -917,7 +919,6 @@
         </relationship>
     </object>
     <object class="MixerBusFader" id="{413d1761-03de-4dc6-8c94-ab9c010424dc}"/>
-    <object class="SpatialiserEffect" id="{ca103cff-a76f-4481-8175-e0f8325e37ff}"/>
     <object class="AutomationPoint" id="{2f2c686a-a714-4414-8632-68911e5a0fce}">
         <property name="position">
             <value>0</value>
