@@ -6,6 +6,10 @@ ModelImporter:
     100000: //RootNode
     400000: //RootNode
     2100000: acesjustforroomshow_ACES_INTERIOR_OBJ_ACES8_sized_aceshelmet_emusuit5_lambert2SG
+    2100002: acesjustforroomshow_ACES_INTERIOR_OBJ_ACES8_sized_lambert4SG
+    2100004: acesjustforroomshow_ACES_INTERIOR_OBJ_ACES8_sized_lambert6SG
+    2100006: acesjustforroomshow_ACES_INTERIOR_OBJ_ACES8_sized_blinn1SG
+    2100008: acesjustforroomshow_ACES_INTERIOR_OBJ_ACES8_sized_aceshelmet_emusuit5_blinn2SG
     2300000: //RootNode
     3300000: //RootNode
     4300000: acesjustforroomshow_ACES_INTERIOR_OBJ_polySurface1_acesjustforroomshow_polySurface517_acesjustforroomshow_polySurface1
@@ -40,7 +44,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 2
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
