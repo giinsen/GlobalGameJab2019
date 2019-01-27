@@ -29,7 +29,7 @@ public class HeadManager : MonoBehaviour {
     {
         transform.position = helmetTarget.transform.position;
 
-        Quaternion diff = transform.rotation * Quaternion.Inverse(helmetTarget.transform.rotation);
+        /*Quaternion diff = transform.rotation * Quaternion.Inverse(helmetTarget.transform.rotation);
         float diffAngle = Quaternion.Angle(transform.rotation, helmetTarget.transform.rotation);
         //Debug.Log(diffAngle);
 
@@ -63,7 +63,7 @@ public class HeadManager : MonoBehaviour {
         else
         {
             Debug.LogError("Unexpected case in helmet rotation !!");
-        }
+        }*/
 
         //transform.rotation = Quaternion.RotateTowards(transform.rotation, helmetTarget.transform.rotation, currentRotationSpeed * Time.deltaTime);
         transform.rotation = helmetTarget.transform.rotation;

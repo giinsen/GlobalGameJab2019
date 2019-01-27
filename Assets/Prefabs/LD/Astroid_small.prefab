@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 54455211180842152}
   - component: {fileID: 114125836088746044}
   - component: {fileID: 114558154922376874}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Astroid_small
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,4 +168,8 @@ MonoBehaviour:
   rotationSpeed: 5
   grabSpeedModifier: 0.75
   departureSpeed: 180
+  head: {fileID: 0}
   asteroidDepartudeSpeed: 220
+  rotateAroundSomething: 0
+  something: {fileID: 0}
+  rotationSpeedAroundSomething: 0

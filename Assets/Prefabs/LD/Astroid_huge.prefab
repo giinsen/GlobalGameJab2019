@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 64260031400459992}
   - component: {fileID: 54517388438410904}
   - component: {fileID: 114380879000963132}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Astroid_huge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -145,6 +145,7 @@ MonoBehaviour:
   rotationSpeed: 1
   grabSpeedModifier: 0.5
   departureSpeed: 220
+  head: {fileID: 0}
 --- !u!114 &114926123184704926
 MonoBehaviour:
   m_ObjectHideFlags: 1

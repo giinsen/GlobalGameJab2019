@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33558150836714992}
   - component: {fileID: 23561604265854658}
   - component: {fileID: 65990486849031876}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Propane_Tank_Large (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 33098439643413474}
   - component: {fileID: 23854802556509274}
   - component: {fileID: 65871373763314888}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Propane_Tank_Large (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 33589363184896548}
   - component: {fileID: 23084674956761532}
   - component: {fileID: 65931629339472164}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cargo Case
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76,7 +76,7 @@ GameObject:
   - component: {fileID: 33261725581716960}
   - component: {fileID: 23152477636062386}
   - component: {fileID: 65313689812729570}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Propane_Tank_Large (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4438362260902726}
   - component: {fileID: 108886206002387260}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 33336681735968136}
   - component: {fileID: 23371080202768744}
   - component: {fileID: 65293793853354536}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cargo Case (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 114222588469382524}
   - component: {fileID: 114261752286444172}
   - component: {fileID: 114062348995804450}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: checkpoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,7 +149,7 @@ GameObject:
   - component: {fileID: 33994800872602188}
   - component: {fileID: 23671009566792876}
   - component: {fileID: 65341512836674090}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cargo Case (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -167,7 +167,7 @@ GameObject:
   - component: {fileID: 33106217106270176}
   - component: {fileID: 23445504511632312}
   - component: {fileID: 65118193296484090}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: poto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -804,3 +804,4 @@ MonoBehaviour:
   rotationSpeed: 0
   grabSpeedModifier: 0.7
   departureSpeed: 220
+  head: {fileID: 0}
