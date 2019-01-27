@@ -64,7 +64,7 @@ public class HeadManager : MonoBehaviour {
             Debug.LogError("Unexpected case in helmet rotation !!");
         }
 
-        Quaternion.RotateTowards(transform.rotation, helmetTarget.transform.rotation, currentRotationSpeed);
+        Quaternion.RotateTowards(transform.rotation, helmetTarget.transform.rotation, currentRotationSpeed * Time.deltaTime);
 	}
 
     private void OnTriggerEnter(Collider other)
