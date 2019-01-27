@@ -31,14 +31,15 @@ public class HeadManager : MonoBehaviour {
 
         Quaternion diff = transform.rotation * Quaternion.Inverse(helmetTarget.transform.rotation);
         float diffAngle = Quaternion.Angle(transform.rotation, helmetTarget.transform.rotation);
-
+        //Debug.Log(diffAngle);
 
         float currentRotationSpeed = 0;
 
         // clamp
         if (diffAngle > clampDistance)
         {
-            // mettre casque à distance clampée
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, helmetTarget.transform.rotation, diffAngle - clampDistance);
+            return;
         }
 
         // ease in
@@ -64,8 +65,10 @@ public class HeadManager : MonoBehaviour {
             Debug.LogError("Unexpected case in helmet rotation !!");
         }
 
-        Quaternion.RotateTowards(transform.rotation, helmetTarget.transform.rotation, currentRotationSpeed * Time.deltaTime);
-	}
+        transform.rotation = Quaternion.RotateTowards(transform.rotation, helmetTarget.transform.rotation, currentRotationSpeed * Time.deltaTime);
+        //transform.rotation = helmetTarget.transform.rotation;
+
+    }
 
     private void OnTriggerEnter(Collider other)
     {

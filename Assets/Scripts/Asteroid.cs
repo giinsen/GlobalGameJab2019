@@ -10,29 +10,29 @@ public class Asteroid : MonoBehaviour
     protected Interactable interactable;
     protected Hand.AttachmentFlags attachmentFlags = Hand.AttachmentFlags.DetachOthers;
     protected GameObject player;
-    private Vector3 startingHandPos;
-    private Vector3 previousHandPos;
-    private float durationGrab = 0f;
+    protected Vector3 startingHandPos;
+    protected Vector3 previousHandPos;
+    protected float durationGrab = 0f;
 
     public float rotationSpeed;
 
-    private Vector3 startingPlayerPos;
-    private List<Vector3> positionList = new List<Vector3>();
+    protected Vector3 startingPlayerPos;
+    protected List<Vector3> positionList = new List<Vector3>();
 
-    private Vector3 previousAsteroidPos;
+    protected Vector3 previousAsteroidPos;
 
     protected bool isDetached = true;
 
     public float grabSpeedModifier = 0.7f;
     public float departureSpeed;
 
-    private GameObject handAttachementPoint;
+    protected GameObject handAttachementPoint;
 
-    private GameObject playerAttachementPoint;
+    protected GameObject playerAttachementPoint;
 
-    private Hand LastHandGrab;
+    protected Hand LastHandGrab;
 
-    private bool twoHandGrab = false;
+    protected bool twoHandGrab = false;
 
     protected virtual void Awake()
     {
@@ -41,7 +41,7 @@ public class Asteroid : MonoBehaviour
         handAttachementPoint = new GameObject("Attachment Point");
         handAttachementPoint.transform.parent = transform;
         handAttachementPoint.transform.localPosition = Vector3.zero;
-        //GetComponent<Interactable>().handFollowTransform = handAttachementPoint.transform;
+        GetComponent<Interactable>().handFollowTransform = handAttachementPoint.transform;
 
         /*playerAttachementPoint = new GameObject("Player Attachment Point");
         playerAttachementPoint.transform.parent = transform;
@@ -72,7 +72,7 @@ public class Asteroid : MonoBehaviour
                 previousAsteroidPos = transform.position;
 
                 durationGrab = 0f;
-                //player.transform.SetParent(this.gameObject.transform);
+                player.transform.SetParent(this.gameObject.transform);
                 //startingPlayerPos = player.transform.position;
                 ClearPositionList();
                 player.GetComponent<Rigidbody>().velocity = Vector3.zero;
@@ -172,7 +172,7 @@ public class Asteroid : MonoBehaviour
         return pos;
     }
 
-    private void ClearPositionList()
+    protected void ClearPositionList()
     {
         positionList.Clear();
     }
