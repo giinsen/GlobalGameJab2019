@@ -8,9 +8,10 @@ public class Checkpoint : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Head")
         {
-            other.gameObject.GetComponent<PlayerManager>().Checkpoint(checkpointLevel, transform.position, transform.rotation);
+            Debug.Log("entered  checkpoint");
+            other.gameObject.GetComponentInParent<PlayerManager>().Checkpoint(checkpointLevel, transform.position, transform.rotation);
 
             GetComponent<Collider>().enabled = false;
             GetComponentInChildren<Light>().color = Color.green;
