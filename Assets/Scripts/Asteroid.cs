@@ -45,7 +45,6 @@ public class Asteroid : MonoBehaviour
     public GameObject head;
 
 
-
     protected virtual void Awake()
     {
         interactable = GetComponent<Interactable>();
@@ -157,6 +156,8 @@ public class Asteroid : MonoBehaviour
 
         if (interactable.attachedToHand == null)
         {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Astronaut/Collision");
+
             twoHandGrab = false;
             isDetached = false;
             LastHandGrab = hand;
@@ -189,6 +190,8 @@ public class Asteroid : MonoBehaviour
         }
         else
         {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Astronaut/Collision");
+
             twoHandGrab = true;
             //interactable.attachedToHand = null;
             LastHandGrab.DetachObject(gameObject);

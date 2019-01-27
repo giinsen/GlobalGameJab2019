@@ -139,7 +139,7 @@ public class PlayerManager : MonoBehaviour {
         lastCheckpointPosition = chekpointPosition;
         lastCheckpointRotation = checkpointRotation;
         oxygeneSoundLevel.setValue(10f);
-        checkpointMusicNumber.setValue(Mathf.Clamp(level + 1, 1, 4));
+        //checkpointMusicNumber.setValue(Mathf.Clamp(level + 1, 1, 4));
         checkpointMusic.set3DAttributes(RuntimeUtils.To3DAttributes(chekpointPosition));
         checkpointMusic.start(); // Joue le son
     }

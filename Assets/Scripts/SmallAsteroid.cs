@@ -48,7 +48,7 @@ public class SmallAsteroid : Asteroid
         //ici
     }
 
-    protected override void HandHoverUpdate(Hand hand)
+   /*protected override void HandHoverUpdate(Hand hand)
     {
         GrabTypes startingGrabType = hand.GetGrabStarting();
 
@@ -109,7 +109,7 @@ public class SmallAsteroid : Asteroid
 
             }
         }
-    }
+    } */
 
     protected override void OnDetachedFromHand(Hand hand)
     {
