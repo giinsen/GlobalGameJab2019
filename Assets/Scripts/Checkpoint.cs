@@ -10,7 +10,7 @@ public class Checkpoint : MonoBehaviour {
     {
         if (other.gameObject.tag == "Player")
         {
-            PlayerManager.Checkpoint(checkpointLevel, transform.position, transform.rotation);
+            other.gameObject.GetComponent<PlayerManager>().Checkpoint(checkpointLevel, transform.position, transform.rotation);
 
             GetComponent<Collider>().enabled = false;
             GetComponentInChildren<Light>().color = Color.green;

@@ -17,11 +17,14 @@ public class PlayerManager : MonoBehaviour {
     FMOD.Studio.EventInstance collisionSound;
     FMOD.Studio.ParameterInstance collisionSoundForce;
 
-    private static bool[] checkpoint = new bool[] {false,false,false,false,false};
-    private static Vector3 lastCheckpointPosition;
-    private static Quaternion lastCheckpointRotation;
+    private bool[] checkpoint = new bool[] {false,false,false,false,false};
+    private Vector3 lastCheckpointPosition;
+    private Quaternion lastCheckpointRotation;
 
-    public float oxygen = 10f;
+    private float oxygen = 10f;
+    public float timerMaxOxygenSeconds = 120f;
+
+    private float oxygenTimer = 0f;
 
     private void Start()
     {
@@ -48,17 +51,42 @@ public class PlayerManager : MonoBehaviour {
     {
         if (SteamVR_Input._default.inActions.Teleport.GetStateDown(SteamVR_Input_Sources.Any))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            transform.position = lastCheckpointPosition + Vector3.one/2;
-            transform.rotation = lastCheckpointRotation;
+            Restart();
         }
 
+        oxygenTimer += Time.deltaTime;
+        oxygeneSoundLevel.setValue(10-(oxygenTimer / (timerMaxOxygenSeconds/10)));
+
+        if (oxygenTimer >= timerMaxOxygenSeconds)
+        {
+            Death();
+        }
     }
 
-    public static void Checkpoint(int level, Vector3 chekpointPosition, Quaternion checkpointRotation)
+    private void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        transform.position = lastCheckpointPosition + Vector3.one / 2;
+        transform.rotation = lastCheckpointRotation;
+        oxygeneSoundLevel.setValue(9.95f);
+        //to do : coroutine de fade screen
+    }
+
+    private void Death()
+    {
+        oxygeneSoundLevel.setValue(10f);
+    }
+
+
+    public void Checkpoint(int level, Vector3 chekpointPosition, Quaternion checkpointRotation)
     {
         checkpoint[level] = true;
         lastCheckpointPosition = chekpointPosition;
         lastCheckpointRotation = checkpointRotation;
+        oxygeneSoundLevel.setValue(10f);
+        checkpointMusicNumber.setValue(Mathf.Clamp(level + 1, 1, 4));
+        checkpointMusic.start(); // Joue le son
     }
+
+    
 }
