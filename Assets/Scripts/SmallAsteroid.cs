@@ -9,6 +9,10 @@ public class SmallAsteroid : Asteroid
 
     public float asteroidDepartudeSpeed = 150f;
 
+    public bool rotateAroundSomething;
+    public GameObject something;
+    public float rotationSpeedAroundSomething;
+
     private Vector3 initialVelocity = Vector3.zero; // always zero for the time being
     private Vector3 initialPosition;
 
@@ -22,7 +26,12 @@ public class SmallAsteroid : Asteroid
 
     protected override void Update()
     {
-        transform.Rotate(Vector3.one * Time.deltaTime * 0f, Space.Self);
+        base.Update();
+        if (rotateAroundSomething)
+        {
+            transform.RotateAround(something.transform.position, Vector3.up, rotationSpeedAroundSomething * Time.deltaTime);
+        }
+
     }
 
     public static void ResetPositions()

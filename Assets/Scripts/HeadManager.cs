@@ -65,8 +65,8 @@ public class HeadManager : MonoBehaviour {
             Debug.LogError("Unexpected case in helmet rotation !!");
         }
 
-        transform.rotation = Quaternion.RotateTowards(transform.rotation, helmetTarget.transform.rotation, currentRotationSpeed * Time.deltaTime);
-        //transform.rotation = helmetTarget.transform.rotation;
+        //transform.rotation = Quaternion.RotateTowards(transform.rotation, helmetTarget.transform.rotation, currentRotationSpeed * Time.deltaTime);
+        transform.rotation = helmetTarget.transform.rotation;
 
     }
 

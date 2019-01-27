@@ -34,6 +34,16 @@ public class Asteroid : MonoBehaviour
 
     protected bool twoHandGrab = false;
 
+    private Vector3 startAsteroidPos;
+    private Quaternion startAsteroidRotQ;
+
+    private Vector3 startHeadPos;
+    private Quaternion startPlayerRotQ;
+
+    private float distToHand;
+
+    public GameObject head;
+
     protected virtual void Awake()
     {
         interactable = GetComponent<Interactable>();
@@ -43,9 +53,12 @@ public class Asteroid : MonoBehaviour
         handAttachementPoint.transform.localPosition = Vector3.zero;
         GetComponent<Interactable>().handFollowTransform = handAttachementPoint.transform;
 
-        /*playerAttachementPoint = new GameObject("Player Attachment Point");
+        playerAttachementPoint = new GameObject("Player Attachment Point");
         playerAttachementPoint.transform.parent = transform;
-        playerAttachementPoint.transform.localPosition = Vector3.zero;*/
+        playerAttachementPoint.transform.localPosition = Vector3.zero;
+
+        startAsteroidPos = transform.position;
+        startAsteroidRotQ = transform.rotation;
     }
 
     protected virtual void Update()
@@ -67,12 +80,12 @@ public class Asteroid : MonoBehaviour
                 hand.AttachObject(gameObject, startingGrabType, attachmentFlags);
 
                 //Debug.Log("grabing start hand position :  " + hand.transform.position);
-                startingHandPos = hand.transform.position;
+                startingHandPos = hand.transform.localPosition;
                 previousHandPos = startingHandPos;
                 previousAsteroidPos = transform.position;
 
                 durationGrab = 0f;
-                player.transform.SetParent(this.gameObject.transform);
+                //player.transform.SetParent(this.gameObject.transform);
                 //startingPlayerPos = player.transform.position;
                 ClearPositionList();
                 player.GetComponent<Rigidbody>().velocity = Vector3.zero;
@@ -81,8 +94,15 @@ public class Asteroid : MonoBehaviour
 
                 hand.TriggerHapticPulse(0.15f, 1 / 0.15f, 100f);
 
+                //playerAttachementPoint.transform.position = player.transform.position;
+
                 //player.transform.parent.transform.parent = transform;
-                player.transform.parent = handAttachementPoint.transform;
+                playerAttachementPoint.transform.position = player.transform.position;
+                player.transform.parent = playerAttachementPoint.transform;
+
+                //startHeadPos = head.transform.position;//head.transform.position + (player.transform.position - head.transform.position) ;
+                //startPlayerRotQ = head.transform.rotation;
+                //distToHand = Vector3.Distance(head.transform.position, player.transform.position);
             }
             else
             {
@@ -101,9 +121,9 @@ public class Asteroid : MonoBehaviour
 
                 ClearPositionList();
                 player.GetComponent<Rigidbody>().velocity = Vector3.zero;
-                player.transform.parent = null;
-                handAttachementPoint.transform.position = hand.transform.position;
-                player.transform.parent = handAttachementPoint.transform;
+                //player.transform.parent = null;
+                handAttachementPoint.transform.position = player.transform.position;
+                //player.transform.parent = handAttachementPoint.transform;
                 hand.TriggerHapticPulse(0.15f, 1 / 0.15f, 50f);
 
             }
@@ -121,14 +141,19 @@ public class Asteroid : MonoBehaviour
             durationGrab += Time.deltaTime;
             //Debug.Log("grab is on the way : " + hand.transform.position);
 
-            Vector3 asteroidMovement = transform.position - previousAsteroidPos;
-            Vector3 playerMovement = (previousHandPos - hand.transform.position) * grabSpeedModifier;
+            
+
+
+            //Vector3 asteroidMovement = transform.position - previousAsteroidPos;
+            Vector3 playerMovement = (previousHandPos - hand.transform.localPosition) * grabSpeedModifier;
 
             //player.transform.position = player.transform.position + playerMovement + asteroidMovement;
-            player.transform.position += playerMovement;
+            player.transform.localPosition += playerMovement;
 
-            previousHandPos = hand.transform.position;
-            previousAsteroidPos = transform.position;
+            //player.transform.position = playerAttachementPoint.transform.position;
+
+            previousHandPos = hand.transform.localPosition;
+            //previousAsteroidPos = transform.position;
 
 
 
@@ -147,8 +172,8 @@ public class Asteroid : MonoBehaviour
         {
             isDetached = true;
             //player.GetComponent<Rigidbody>().velocity = Vector3.zero;
-            //player.transform.SetParent(null);
-            player.transform.parent = null;
+            player.transform.SetParent(null);
+            //player.transform.parent = null;
             //Vector3 totalMovement = (startingPlayerPos - player.transform.position);
             player.GetComponent<Rigidbody>().AddForce(GetDirectionPositionList() * departureSpeed);
             //Debug.Log("grabing finish : " + GetDirectionPositionList());
